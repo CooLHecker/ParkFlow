@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FDFCF8;
+    --color-sage: #E8EFE8;
+    --color-lavender: #EFEDF4;
+    --color-coral: #FFB7B2;
+    --color-dark: #292524;
+    --color-muted: #78716C;
+  }
+
+  body {
+    background-color: #FDFCF8;
+    color: #292524;
+    font-family: 'Outfit', 'Noto Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.font-outfit {
+  font-family: 'Outfit', 'Noto Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Subtle organic blob floating animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.03);
+  }
+}
+
+@keyframes softFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) scale(1.02);
+  }
+  50% {
+    transform: translateY(14px) scale(0.98);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 7s ease-in-out infinite;
+}
+
+.animate-soft-float-slow {
+  animation: softFloatReverse 9s ease-in-out infinite;
+}
+
+/* Custom soft scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Softly Park - Tactile Smart Parking Management",
+  "description": "A calm, mobile-first parking management system with animated car slot allocation, advance booking, and automated billing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
